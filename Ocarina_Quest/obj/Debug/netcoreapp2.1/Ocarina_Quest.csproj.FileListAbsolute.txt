@@ -1,0 +1,12 @@
+/Users/home/Projects/Ocarina_Quest/Ocarina_Quest/obj/Debug/netcoreapp2.1/Ocarina_Quest.csprojAssemblyReference.cache
+/Users/home/Projects/Ocarina_Quest/Ocarina_Quest/obj/Debug/netcoreapp2.1/Ocarina_Quest.csproj.CoreCompileInputs.cache
+/Users/home/Projects/Ocarina_Quest/Ocarina_Quest/obj/Debug/netcoreapp2.1/Ocarina_Quest.AssemblyInfoInputs.cache
+/Users/home/Projects/Ocarina_Quest/Ocarina_Quest/obj/Debug/netcoreapp2.1/Ocarina_Quest.AssemblyInfo.cs
+/Users/home/Projects/Ocarina_Quest/Ocarina_Quest/bin/Debug/netcoreapp2.1/Songs.txt
+/Users/home/Projects/Ocarina_Quest/Ocarina_Quest/bin/Debug/netcoreapp2.1/Ocarina_Quest.deps.json
+/Users/home/Projects/Ocarina_Quest/Ocarina_Quest/bin/Debug/netcoreapp2.1/Ocarina_Quest.runtimeconfig.json
+/Users/home/Projects/Ocarina_Quest/Ocarina_Quest/bin/Debug/netcoreapp2.1/Ocarina_Quest.runtimeconfig.dev.json
+/Users/home/Projects/Ocarina_Quest/Ocarina_Quest/bin/Debug/netcoreapp2.1/Ocarina_Quest.dll
+/Users/home/Projects/Ocarina_Quest/Ocarina_Quest/bin/Debug/netcoreapp2.1/Ocarina_Quest.pdb
+/Users/home/Projects/Ocarina_Quest/Ocarina_Quest/obj/Debug/netcoreapp2.1/Ocarina_Quest.dll
+/Users/home/Projects/Ocarina_Quest/Ocarina_Quest/obj/Debug/netcoreapp2.1/Ocarina_Quest.pdb

@@ -1,10 +1,30 @@
 ﻿using System;
-namespace Ocarina_Quest
+using System.IO;
+using System.Net;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace Links
 {
-    public class EmptyClass
-    {
-        public EmptyClass()
-        {
-        }
-    }
+	class Character
+	{
+		public List<Song> _songs { get; set; }
+		public string _name { get; set; }
+		public string _fileName { get; set; }
+
+		public Character(string name, List<Song> songs)
+		{
+			_name = name;
+			_songs = songs;
+		}
+
+
+		public bool LearnSong()
+		{
+			_songs[1]._avail = true;
+			return _songs[1]._avail;
+		}
+
+
+	}
 }

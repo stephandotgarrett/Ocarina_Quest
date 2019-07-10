@@ -1,0 +1,13 @@
+﻿Song title, Notes, action, Avalability?
+Zelda's Lullaby, xayxay, learn to begin quest, true
+Saria's Song, ryxryx, contact saria, false
+Epona's Song, axyaxy, summon epona, false
+Sun's Song, yrayra, day/ night switch, false
+Song of Time, ylrylr, earn special ability, false
+Song of Storms, lralra, make it rain, false
+Minuet of Forest, laxyxy, warp to forest temple, false
+Bolero of Fire, rlrlyryr, warp to fire temple, false
+Serenade of water, lryyx, warp to water temple, false
+Nocturne of Shadow, xyylxyr, warp to shadow temple, false
+Requiem of Spirit, lrlyrl, warp to spirit temple, false
+Prelude of Light, ayayxa, warp to temple of time, false

@@ -1,23 +1,26 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Ocarina_Quest/Songs.txt">
+﻿<Properties StartupConfiguration="{0FF07611-B848-4660-806B-25F0C6C494D1}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ocarina_Quest/EmptyClass.cs">
     <Files>
       <File FileName="Ocarina_Quest/Songs.txt" Line="13" Column="26" />
-      <File FileName="Ocarina_Quest/Character.cs" Line="1" Column="1" />
-      <File FileName="Ocarina_Quest/Program.cs" Line="1" Column="1" />
+      <File FileName="Ocarina_Quest/Character.cs" Line="30" Column="2" />
+      <File FileName="Ocarina_Quest/Program.cs" Line="30" Column="1" />
+      <File FileName="Ocarina_Quest/EmptyClass.cs" Line="11" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Ocarina_Quest" expanded="True" />
+          <Node name="Ocarina_Quest" expanded="True">
+            <Node name="Ocarina_Quest" expanded="True">
+              <Node name="EmptyClass.cs" selected="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <DisabledProjects>
-    <String>Ocarina_Quest/Ocarina_Quest.csproj</String>
-  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Ocarina__Quest PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
