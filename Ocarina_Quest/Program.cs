@@ -1,11 +1,11 @@
 ﻿// Link's music quest platform
 
 //To Do:
-//1. Make Song Class
-//2. Create csv of songs
+//1. create stream writer after initial parse to save character (andy)
+//2. 
 //3. Create a song maker/learner
-//4. Custom song maker?
-//5. Create Character List
+//4. 
+//5. create menu (create player, continue player)
 
 using System;
 using System.IO;
@@ -26,11 +26,22 @@ namespace Links
 
 			List<Song> songs = new List<Song>(ReadSongs(fileName));
 
+			DisplayMenu();
 
 		}
 
 
+		public static void DisplayMenu()
+		{
 
+			Console.WriteLine("");
+			Console.WriteLine("Welcome To Ocarina Quest!!");
+			Console.WriteLine("What would you like to do?");
+			Console.WriteLine("1) Create new player");
+			Console.WriteLine("2) Continue ");
+
+			int choice = Console.ReadLine();
+		}
 
 		public static List<Song> ReadSongs(string fileName)
 		{
