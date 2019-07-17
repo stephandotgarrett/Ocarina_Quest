@@ -13,4 +13,6 @@ namespace Links
         public string _action { get; set; }
         public bool _avail { get; set; }
     }
+
+
 }

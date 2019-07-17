@@ -1,11 +1,8 @@
 ﻿// Link's music quest platform
 
 //To Do:
-//1. Make Song Class
-//2. Create csv of songs
-//3. Create a song maker/learner
-//4. Custom song maker?
-//5. Create Character List
+//1. Continue from new character creation
+//2. Continue menu options (learner, lister)
 
 using System;
 using System.IO;
@@ -17,11 +14,12 @@ namespace Links
 {
 	class Program
 	{
+        private static List<Song> songs = new List<Song>();
+		private static List<Song> contSongs = new List<Song>();
+
 		static void Main(string[] args)
 		{
-
 			RunMenu();
-
 		}
 
 		public static void RunMenu()
@@ -30,12 +28,12 @@ namespace Links
 			string currentDirectory = Directory.GetCurrentDirectory();
 			DirectoryInfo directory = new DirectoryInfo(currentDirectory);
 			string fileName = Path.Combine(directory.FullName, "Songs.txt");
-			List<Song> songs = new List<Song>(ReadSongs(fileName));
+			songs = ReadSongs(fileName);
 
 			string characterDirectory = Directory.GetCurrentDirectory();
 			DirectoryInfo directory2 = new DirectoryInfo(characterDirectory);
 			string contFile = Path.Combine(directory2.FullName, "Character.txt");
-			List<Song> contSongs = new List<Song>(Continue(contFile));
+			contSongs = ReadSongs(contFile);
 
 			Console.WriteLine("");
 			Console.WriteLine("Welcome To Ocarina Quest!!");
@@ -63,71 +61,49 @@ namespace Links
 			}
 			else if (choice == "2")
 			{
+				using (var reader = new StreamReader(contFile))
+				{
+					name = reader.ReadLine();
+				}
 				if (name == "")
 				{
 					Console.Clear();
 					Console.WriteLine("It looks like there are no previous players");
 					RunMenu();
 				}
-				else
+				else if (name != "")
 				{
 					Console.WriteLine("");
 					Console.WriteLine("Welcome back {0}!!!", name);
 					ContinueMenu();
 				}
-				//            foreach (Song song in contSongs)
-				//            {
-				//              Console.WriteLine(song._songTitle + "," + song._songNotes + "," + song._action + ", " + song._avail);
-				//            }
 			}
 			else
-			{ }
+			{
+			}
 		}
 
 		public static void ContinueMenu()
 		{
-
 			Console.WriteLine("What would you like to do?");
 			Console.WriteLine("1) Learn Song");
 			Console.WriteLine("2) List Song");
+
+			string choice1 = Console.ReadLine();
+
+			if (choice1 == "1")
+			{
+
+			}
+			else if (choice1 == "2")
+			{ }
+            else
+			{ }
 		}
 
 
 
 		public static List<Song> ReadSongs(string fileName)
-		{
-			var songs = new List<Song>();
-			using (var reader = new StreamReader(fileName))
-			{
-				string line = "";
-				reader.ReadLine();
-				while ((line = reader.ReadLine()) != null)
-				{
-					var song = new Song();
-					string[] values = line.Split(',');
-
-					string songTitle = values[0];
-					song._songTitle = songTitle;
-
-					string songNotes = values[1];
-					song._songNotes = songNotes;
-
-					string action = values[2];
-					song._action = action;
-
-					bool avail;
-					if (Boolean.TryParse(values[3], out avail))
-					{
-						song._avail = avail;
-					}
-
-					songs.Add(song);
-				}
-			}
-			return songs;
-		}
-
-		public static List<Song> Continue(string fileName)
 		{
 			var songs = new List<Song>();
 			using (var reader = new StreamReader(fileName))
