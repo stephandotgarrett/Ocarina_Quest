@@ -10,3 +10,4 @@
 /Users/home/Projects/Ocarina_Quest/Ocarina_Quest/bin/Debug/netcoreapp2.1/Ocarina_Quest.pdb
 /Users/home/Projects/Ocarina_Quest/Ocarina_Quest/obj/Debug/netcoreapp2.1/Ocarina_Quest.dll
 /Users/home/Projects/Ocarina_Quest/Ocarina_Quest/obj/Debug/netcoreapp2.1/Ocarina_Quest.pdb
+/Users/home/Projects/Ocarina_Quest/Ocarina_Quest/bin/Debug/netcoreapp2.1/Character.txt
