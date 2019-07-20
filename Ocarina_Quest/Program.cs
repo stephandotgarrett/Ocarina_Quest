@@ -16,34 +16,30 @@ namespace Links
 	{
         private static List<Song> songs = new List<Song>();
 		private static List<Song> contSongs = new List<Song>();
+		private static string name = "";
+		private static string currentDirectory = Directory.GetCurrentDirectory();
+		private static DirectoryInfo directory = new DirectoryInfo(currentDirectory);
+		private static string fileName = Path.Combine(directory.FullName, "Songs.txt");
+		private static string contFile = Path.Combine(directory.FullName, "Character.txt");
 
 		static void Main(string[] args)
 		{
+			songs = ReadSongs(fileName);
+			contSongs = ReadSongs(contFile);
 			RunMenu();
 		}
 
 		public static void RunMenu()
 		{
-			string name = "";
-			string currentDirectory = Directory.GetCurrentDirectory();
-			DirectoryInfo directory = new DirectoryInfo(currentDirectory);
-			string fileName = Path.Combine(directory.FullName, "Songs.txt");
-			songs = ReadSongs(fileName);
-
-			string characterDirectory = Directory.GetCurrentDirectory();
-			DirectoryInfo directory2 = new DirectoryInfo(characterDirectory);
-			string contFile = Path.Combine(directory2.FullName, "Character.txt");
-			contSongs = ReadSongs(contFile);
-
 			Console.WriteLine("");
 			Console.WriteLine("Welcome To Ocarina Quest!!");
 			Console.WriteLine("What would you like to do?");
 			Console.WriteLine("1) Create new player");
 			Console.WriteLine("2) Continue ");
 
-			string choice = Console.ReadLine();
+			string runChoice = Console.ReadLine();
 
-			if (choice == "1")
+			if (runChoice == "1")
 			{
 				Console.WriteLine("");
 				Console.WriteLine("Please enter your name: ");
@@ -57,9 +53,9 @@ namespace Links
 
 					}
 				}
-
+				ContinueMenu();
 			}
-			else if (choice == "2")
+			else if (runChoice == "2")
 			{
 				using (var reader = new StreamReader(contFile))
 				{
@@ -73,8 +69,7 @@ namespace Links
 				}
 				else if (name != "")
 				{
-					Console.WriteLine("");
-					Console.WriteLine("Welcome back {0}!!!", name);
+					
 					ContinueMenu();
 				}
 			}
@@ -85,6 +80,8 @@ namespace Links
 
 		public static void ContinueMenu()
 		{
+			Console.WriteLine("");
+			Console.WriteLine("Welcome {0}!!!", name);
 			Console.WriteLine("What would you like to do?");
 			Console.WriteLine("1) Learn Song");
 			Console.WriteLine("2) List Song");
@@ -96,12 +93,36 @@ namespace Links
 
 			}
 			else if (choice1 == "2")
-			{ }
+			{
+				Console.WriteLine("");
+				foreach (Song song in contSongs)
+				{
+					if (song._avail == true)
+					{
+						Console.ForegroundColor = ConsoleColor.Green;
+						Console.WriteLine(song._songTitle + " Learned");
+						Console.ResetColor();
+					}
+                    else
+					{
+						Console.ForegroundColor = ConsoleColor.Red;
+						Console.WriteLine(song._songTitle + " Not Learned");
+						Console.ResetColor();
+					}
+                }
+				Console.WriteLine("Would you like to learn any songs? y/n: ");
+			}
             else
-			{ }
+			{
+				Console.WriteLine("I'm sorry, that isn't a valid option");
+				ContinueMenu();
+			}
 		}
 
+        public static void LearnSong(string title)
+		{
 
+		}
 
 		public static List<Song> ReadSongs(string fileName)
 		{
