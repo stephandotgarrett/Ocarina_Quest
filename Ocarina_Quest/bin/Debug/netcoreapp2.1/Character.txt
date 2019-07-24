@@ -1,12 +1,12 @@
-Steve
+kjhdsa
 Zelda's Lullaby, xayxay, learn to begin quest, True
 Saria's Song, ryxryx, contact saria, False
 Epona's Song, axyaxy, summon epona, False
 Sun's Song, yrayra, day/ night switch, False
-Song of Time, ylrylr, earn special ability, False
-Song of Storms, lralra, make it rain, False
+Song of Time, ylrylr, earn special ability, True
+Song of Storms, lralra, make it rain, True
 Minuet of Forest, laxyxy, warp to forest temple, False
-Bolero of Fire, rlrlyryr, warp to fire temple, False
+Bolero of Fire, rlrlyryr, warp to fire temple, True
 Serenade of water, lryyx, warp to water temple, False
 Nocturne of Shadow, xyylxyr, warp to shadow temple, False
 Requiem of Spirit, lrlyrl, warp to spirit temple, False
