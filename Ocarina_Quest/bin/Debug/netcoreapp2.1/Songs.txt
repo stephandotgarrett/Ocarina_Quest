@@ -1,8 +1,8 @@
-﻿Song title, Notes, action, Avalability?
-Zelda's Lullaby, xayxay, learn to begin quest, true
-Saria's Song, ryxryx, contact saria, false
-Epona's Song, axyaxy, summon epona, false
-Sun's Song, yrayra, day/ night switch, false
+﻿Song Title, Notes, Action, Avalability?
+Zelda Lullaby, xayxay, learn to begin quest, true
+Saria Song, ryxryx, contact saria, false
+Epona Song, axyaxy, summon epona, false
+Sun Song, yrayra, day/ night switch, false
 Song of Time, ylrylr, earn special ability, false
 Song of Storms, lralra, make it rain, false
 Minuet of Forest, laxyxy, warp to forest temple, false

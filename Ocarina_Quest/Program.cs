@@ -120,6 +120,13 @@ namespace Links
                     Console.ReadLine();
                     RunMenu();
                 }
+                else
+                {
+                    Console.WriteLine("It looks like something went wrong!");
+                    Console.WriteLine("Press ENTER to continue...");
+                    Console.ReadLine();
+                    RunMenu();
+                }
             }
             else if (choice1 == "3")
             {

@@ -17,15 +17,6 @@ namespace Links
 			_name = name;
 			_songs = songs;
 		}
-
-
-		public bool LearnSong()
-		{
-			_songs[1]._avail = true;
-			return _songs[1]._avail;
-		}
-
-
 	}
 }
 
