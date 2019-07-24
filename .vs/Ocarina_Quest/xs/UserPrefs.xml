@@ -1,18 +1,18 @@
 ﻿<Properties StartupConfiguration="{0FF07611-B848-4660-806B-25F0C6C494D1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Ocarina_Quest/Song.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ocarina_Quest/Program.cs">
     <Files>
       <File FileName="Ocarina_Quest/Songs.txt" Line="1" Column="7" />
       <File FileName="Ocarina_Quest/Character.cs" Line="19" Column="4" />
-      <File FileName="Ocarina_Quest/Program.cs" Line="154" Column="72" />
+      <File FileName="Ocarina_Quest/Program.cs" Line="128" Column="31" />
       <File FileName="Ocarina_Quest/Character.txt" />
-      <File FileName="Ocarina_Quest/Song.cs" Line="15" Column="6" />
+      <File FileName="Ocarina_Quest/Song.cs" Line="9" Column="173" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Ocarina_Quest" expanded="True">
             <Node name="Ocarina_Quest" expanded="True">
-              <Node name="Song.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
