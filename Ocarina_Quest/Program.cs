@@ -34,6 +34,7 @@ namespace Links
             RunMenu();
         }
 
+        //Function to run the main menu
         public static void RunMenu()
         {
             Console.Clear();
@@ -45,6 +46,7 @@ namespace Links
             Console.WriteLine("3) Exit");
 
             string runChoice = Console.ReadLine();
+
 
             if (runChoice == "1")
             {
@@ -83,6 +85,7 @@ namespace Links
             }
         }
 
+        //Function to run the secondary menu
         public static void ContinueMenu()
         {
             Console.Clear();
@@ -91,6 +94,8 @@ namespace Links
             Console.WriteLine("What would you like to do?");
             Console.WriteLine("1) Learn Song");
             Console.WriteLine("2) List Song");
+            Console.WriteLine("3) Back to Main");
+            Console.WriteLine("4) Exit");
 
             string choice1 = Console.ReadLine();
 
@@ -111,16 +116,28 @@ namespace Links
                 else if (learnSong == "n")
                 {
                     Console.WriteLine("Fair enough! Thanks!");
+                    Console.WriteLine("Press ENTER to continue...");
+                    Console.ReadLine();
                     RunMenu();
                 }
+            }
+            else if (choice1 == "3")
+            {
+                RunMenu();
+            }
+            else if (choice1 == "4")
+            {
             }
             else
             {
                 Console.WriteLine("I'm sorry, that isn't a valid option");
+                Console.WriteLine("Press ENTER to continue...");
+                Console.ReadLine();
                 ContinueMenu();
             }
         }
 
+        //Method to learn a new song. Player enters song title to compare to song list.
         public static void LearnSong()
         {
             Console.Clear();
@@ -134,25 +151,30 @@ namespace Links
                     song._avail = true;
                     Console.Clear();
                     Console.WriteLine("Awesome! You learned {0}!", song._songTitle);
+                    Console.WriteLine("Here are the songs you know now:");
                     WriteSongs();
                     ListSongs(contSongs);
+                    Console.WriteLine("Press ENTER to continue...");
                     Console.ReadLine();
                     ContinueMenu();
                 }
                 else if (title == song._songTitle.ToUpper() && song._avail == true)
                 {
                     Console.WriteLine("It looks like you already know that one!");
+                    Console.WriteLine("Press ENTER to continue...");
                     Console.ReadLine();
                     ContinueMenu();
                 }
             }
             Console.WriteLine("Something went wrong!!");
+            Console.WriteLine("Press ENTER to continue...");
             Console.ReadLine();
             ContinueMenu();
                 
             
         }
 
+        // Function to print a list of songs to console
         public static void ListSongs(List<Song> songs)
         {
             foreach (Song song in songs)
@@ -172,6 +194,7 @@ namespace Links
             }
         }
 
+        // Function to write the list of songs to Character.txt file
         public static void WriteSongs()
         {
             using (StreamWriter sw = new StreamWriter("Character.txt"))
@@ -184,6 +207,7 @@ namespace Links
             }
         }
 
+        // Function to read a song file into a list of songs
         public static List<Song> ReadSongs(string fileName)
         {
             var songs = new List<Song>();
