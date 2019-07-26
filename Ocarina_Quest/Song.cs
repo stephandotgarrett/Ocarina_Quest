@@ -6,11 +6,11 @@ using System.Collections.Generic;
 
 namespace Links
 {
-    class Song //Song class to hold values for song title, song notes for future use, song action for using a song for future use, and song availability if song is learned.
+    class Song //Song class to hold values for making a list of songs
     {
-        public string _songTitle { get; set; }
-        public string _songNotes { get; set; }
-        public string _action { get; set; }
-        public bool _avail { get; set; }
+        public string _songTitle { get; set; } //Holds value for song title
+        public string _songNotes { get; set; } //Holds value for song notes for future use in song learning process
+        public string _action { get; set; }  //Holds value for song action for future use in using songs to make available new songs to learn
+        public bool _avail { get; set; } //Holds value for song availability (if it has been learned)
     }
 }
