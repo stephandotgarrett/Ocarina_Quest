@@ -48,7 +48,7 @@ namespace Links
             string runChoice = Console.ReadLine();
 
 
-            if (runChoice == "1")
+            if (runChoice == "1") // Create new player option. Calls to read songs.txt and write continue list
             {
                 Console.Clear();
                 Console.WriteLine("");
@@ -58,27 +58,28 @@ namespace Links
                 contSongs = ReadSongs(songFile);
                 ContinueMenu();
             }
-            else if (runChoice == "2")
+            else if (runChoice == "2") // Continue option. First checks for previous player stored in the character.txt file
+                                       //If player is not found, not found error is displayed. If player is found, runs continue menu
             {
                 using (var reader = new StreamReader(contFile))
                 {
                     name = reader.ReadLine();
                 }
-                if (name == "")
+                if (name == "") // Delivers message if no stored player is found
                 {
                     Console.Clear();
                     Console.WriteLine("It looks like there are no previous players");
                     RunMenu();
                 }
-                else if (name != "")
+                else if (name != "") // Runs continue if previous player is found
                 {
                     ContinueMenu();
                 }
             }
-            else if (runChoice == "3")
+            else if (runChoice == "3") // Exit option
             {
             }
-            else
+            else // Fault if player input is unrecognized
             {
                 Console.WriteLine("That's not a valid option");
                 RunMenu();
@@ -99,21 +100,21 @@ namespace Links
 
             string choice1 = Console.ReadLine();
 
-            if (choice1 == "1")
+            if (choice1 == "1") //Learn Song option
             {
                 LearnSong();
             }
-            else if (choice1 == "2")
+            else if (choice1 == "2") // List song option
             {
                 Console.Clear();
                 ListSongs(contSongs);
                 Console.WriteLine("Would you like to learn any songs? y/n: ");
                 string learnSong = Console.ReadLine();
-                if (learnSong == "y")
+                if (learnSong == "y") //Yes to learn a song
                 {
                     LearnSong();
                 }
-                else if (learnSong == "n")
+                else if (learnSong == "n") // No, player does not want to learn song
                 {
                     Console.WriteLine("Fair enough! Thanks!");
                     Console.WriteLine("Press ENTER to continue...");
@@ -128,11 +129,11 @@ namespace Links
                     RunMenu();
                 }
             }
-            else if (choice1 == "3")
+            else if (choice1 == "3") //Back to main menu option
             {
                 RunMenu();
             }
-            else if (choice1 == "4")
+            else if (choice1 == "4") // Exit option (Curently has an issue, sends to Something went wrong)
             {
             }
             else

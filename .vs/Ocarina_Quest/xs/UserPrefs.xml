@@ -2,10 +2,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Ocarina_Quest/Program.cs">
     <Files>
       <File FileName="Ocarina_Quest/Songs.txt" Line="1" Column="7" />
-      <File FileName="Ocarina_Quest/Character.cs" Line="19" Column="4" />
-      <File FileName="Ocarina_Quest/Program.cs" Line="128" Column="31" />
+      <File FileName="Ocarina_Quest/Character.cs" />
+      <File FileName="Ocarina_Quest/Program.cs" Line="1" Column="1" />
       <File FileName="Ocarina_Quest/Character.txt" />
-      <File FileName="Ocarina_Quest/Song.cs" Line="9" Column="173" />
+      <File FileName="Ocarina_Quest/Song.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
